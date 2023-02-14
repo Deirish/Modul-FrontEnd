@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<div id="content">
+<!-- <div id="content"> -->
     <!--    Это пример, как должна выглядеть TODOшка-->
-    <div class="todo" data-id="0">
+    <!-- <div class="todo" data-id="0">
         <h2 class="title">
             Lorem, ipsum dolor.
         </h2>
@@ -26,17 +26,19 @@
         </div>
         <button class="delete">X</button>
     </div>
-</div>
+</div> -->
 <div class="formWrapper">
-    <h2>Add new todo</h2>
     <form id="form" action="#">
-        <label for="title">Enter name</label>
-        <input type="text" id="title" name="title">
-        <label for="body">Enter name</label>
-        <input type="text" id="body" name="body">
-        <label for="completed">Is completed</label>
-        <input type="checkbox" name="completed" id="completed">
-        <button type="submit" id="submit">Submit</button>
+        <h1>Notebook</h1>
+        <input type="text" id="input" name="title">
+        <button id="button">Add</button>
+        <ul id="result"></ul>
+        <div>
+            Reminders:
+            <span id="total"></span>
+            <button type="submit" id="submit">This done</button>
+        </div>
+        
     </form>
 </div>
 

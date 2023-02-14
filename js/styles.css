@@ -8,7 +8,11 @@
   flex-flow: column;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid rgb(246, 181, 124);
+}
+
+body {
+  background: rgb(186, 203, 244);
 }
 
 .todo {
@@ -25,6 +29,7 @@
   right: 5px;
 }
 
+
 .empty {
   width: 100%;
   display: flex;
@@ -33,25 +38,117 @@
   align-items: center;
 }
 
+.li {
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 82%;
+  height: 35px;
+  margin: 10px 10%;
+  padding: 3px 0px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+h1 {
+  color: rgb(57, 14, 185);
+  width: 100%;
+  text-align: center;
+}
+
 h2 {
   margin: 5px 0;
 }
 
 .formWrapper {
   margin-top: 20px;
-  background-color: lavenderblush;
+  background-color: rgb(244, 235, 235);
 }
 
 #form {
   display: flex;
   flex-flow: row wrap;
+  place-content: center;
 }
 
-#form > * {
-  width: 45%;
-  margin-bottom: 10px;
+#button {
+  width: 50px;
+  height: 50px;
+  background: rgb(141, 169, 221);
+  margin: 0;
+  border: none;
+  color: antiquewhite;
+  font-size: 20px;
+  float: right;
 }
 
-#form button {
-  margin: 0 auto;
+#input {
+  border: 2px solid rgb(92, 200, 239);
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  outline: none;
+  color: rgb(134, 23, 58);
+  width: 50%;
+  padding: 5px 0;
+  margin: 0px 1%;
 }
+
+#form>div  {
+  text-align: center;
+  width: 100%;
+}
+
+#result {
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+  width: 70%;
+}
+
+#result ul{
+  width: 60%;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: 2;
+  top: 8px
+}
+
+.ent {
+  width: 99%;
+  height: 30px;
+  display: inline;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 25px;
+  outline: none;
+  font: italic bold 18px/20px Arial, sans-serif;
+  border: 2px solid #fff;
+}
+
+.ent input[type="text"]:disabled {
+  background: rgb(244, 235, 235);
+}
+
+.buttondelete, .buttonredact {
+  background: rgb(89, 113, 248);
+  border: none;
+  color: #fff;
+  height: 30px;
+  margin-left: 1%;
+  width: 30px;
+  position: absolute;
+  right: 0px;
+}
+.buttonredact {
+  right: 35px;
+}
+#submit {
+  float: right;
+  margin-right: 21%;
+  height: 30px;
+  background: #4e82e2;
+  border: 1px solid #fe950c;
+}
+
